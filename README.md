@@ -1,50 +1,118 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Alpha Construtora MVP
 
-Currently, two official plugins are available:
+## Descrição
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Este projeto é um sistema de gestão abrangente para empresas de construção civil. Ele oferece funcionalidades para controle de EPIs (Equipamentos de Proteção Individual), gestão de documentos, e um painel administrativo para gerenciamento de projetos e equipes.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+- **Login Seguro**: Sistema de autenticação para acesso às funcionalidades.
+- **Controle de EPIs**: Gerenciamento de estoque e distribuição de equipamentos de proteção.
+- **Gestão de Documentos**: Upload e organização de documentos importantes dos colaboradores.
+- **Painel Administrativo**: Visão geral dos projetos e equipes.
+- **Design Responsivo**: Interface adaptável para desktop e dispositivos móveis.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## Tecnologias Utilizadas
+
+- **React**  
+- **TypeScript**  
+- **Tailwind CSS**  
+- **Shadcn UI**  
+- **Framer Motion** (para animações)  
+- **Lucide React** (para ícones)  
+
+---
+
+## Pré-requisitos
+
+Antes de iniciar, certifique-se de ter instalado em sua máquina:
+
+- **Node.js** (versão 14 ou superior)
+- **npm** ou **yarn**
+
+---
+
+## Instalação
+
+### 1. Clone o repositório:
+
+```bash
+git clone https://github.com/aureliodeboa/alpha-construtora.git
+cd alpha-construtora
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Instale as dependências do projeto:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Utilizando **npm**:
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+npm install
 ```
+
+Ou utilizando **yarn**:
+
+```bash
+yarn install
+```
+
+---
+
+## Execução
+
+### 1. Inicie o servidor de desenvolvimento:
+
+Com **npm**:
+
+```bash
+npm run dev
+```
+
+Ou com **yarn**:
+
+```bash
+yarn dev
+```
+
+### 2. Acesse a aplicação no navegador:
+
+Abra o navegador e acesse [http://localhost:3000](http://localhost:3000).
+
+---
+
+## Scripts Disponíveis
+
+- **`npm run dev`** ou **`yarn dev`**: Inicia o servidor de desenvolvimento.
+- **`npm run build`** ou **`yarn build`**: Cria uma versão de produção do projeto.
+- **`npm run start`** ou **`yarn start`**: Inicia o servidor de produção.
+- **`npm run lint`** ou **`yarn lint`**: Verifica e corrige problemas de linting no código.
+
+---
+
+## Estrutura de Diretórios
+
+```
+alpha-construtora/
+├── public/                # Arquivos públicos (imagens, ícones, etc.)
+├── src/                   # Código-fonte do projeto
+│   ├── components/        # Componentes reutilizáveis
+│   ├── pages/             # Páginas da aplicação
+│   ├── assets/            # Recursos estáticos (imagens, fontes)
+│   └── App.tsx            # Componente principal da aplicação
+├── .env                   # Variáveis de ambiente
+├── package.json           # Configurações do projeto e dependências
+└── README.md              # Documentação do projeto
+```
+
+
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo `LICENSE` para mais detalhes.
+
+---
+
