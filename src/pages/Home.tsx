@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 import { ArrowRight, Shield, FileText, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
